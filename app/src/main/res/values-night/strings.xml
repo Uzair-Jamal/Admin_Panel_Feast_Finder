@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Admin Panel Feast Finder</string>
     <string name="designed_by_n_feast_finder">Designed By\nFeast Finder</string>
     <string name="feast_finder">Feast Finder</string>
 </resources>
