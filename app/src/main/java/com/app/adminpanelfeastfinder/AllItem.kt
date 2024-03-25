@@ -19,17 +19,21 @@ class AllItem : AppCompatActivity() {
         setContentView(binding.root)
 
         val foodName = arrayListOf("Burger","Nihari","Burger","Nihari","Burger","Nihari")
-        val foodPrices = arrayListOf("$34,$23,$56,$12,$22,$11,$34")
+        val foodPrices = arrayListOf("$34,$23,$56,$12,$22,$11")
         val foodImage = arrayListOf(
             R.drawable.menu1,
             R.drawable.menu2,
             R.drawable.menu3,
             R.drawable.menu4,
+            R.drawable.menu1,
             R.drawable.menu1
         )
         adapter = AllItemAdapter(foodName,foodPrices,foodImage)
         binding.allItemRv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
         binding.allItemRv.adapter = adapter
 
+        binding.backAddItem.setOnClickListener {
+            finish()
+        }
     }
 }

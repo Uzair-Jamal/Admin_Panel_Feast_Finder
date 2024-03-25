@@ -3,6 +3,7 @@ package com.app.adminpanelfeastfinder
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.app.adminpanelfeastfinder.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.addMenu.setOnClickListener {
             startActivity(Intent(this, AddItem::class.java))
+        }
+        binding.allMenu.setOnClickListener {
+            val intent = Intent(this, AllItem::class.java)
+            startActivity(intent)
         }
     }
 }
