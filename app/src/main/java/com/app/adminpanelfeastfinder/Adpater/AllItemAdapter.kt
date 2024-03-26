@@ -14,11 +14,9 @@ class AllItemAdapter(private val itemName: ArrayList<String>, private val itemPr
         val binding = AllItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ItemViewHolder(binding)
     }
-
     override fun getItemCount(): Int {
         return itemName.size
     }
-
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         holder.bind(position)
     }

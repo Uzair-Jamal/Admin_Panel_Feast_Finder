@@ -26,7 +26,7 @@ class AllItem : AppCompatActivity() {
             R.drawable.menu3,
             R.drawable.menu4,
             R.drawable.menu1,
-            R.drawable.menu1
+            R.drawable.menu3
         )
         adapter = AllItemAdapter(foodName,foodPrices,foodImage)
         binding.allItemRv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)

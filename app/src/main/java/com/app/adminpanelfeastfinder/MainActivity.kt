@@ -21,5 +21,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AllItem::class.java)
             startActivity(intent)
         }
+        binding.allItem.setOnClickListener {
+            startActivity(Intent(this,AllItem::class.java))
+        }
     }
 }

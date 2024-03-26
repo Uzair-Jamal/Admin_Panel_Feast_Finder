@@ -14,6 +14,10 @@ class AddItem : AppCompatActivity() {
         binding = ActivityAddItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.backAddItem.setOnClickListener {
+            finish()
+        }
+
         binding.selectImage.setOnClickListener {
             pickImage.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
         }
@@ -28,4 +32,5 @@ class AddItem : AppCompatActivity() {
           binding.selectedImg.setImageURI(uri)
         }
     }
+
 }
