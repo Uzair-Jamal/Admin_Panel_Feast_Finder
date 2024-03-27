@@ -24,5 +24,8 @@ class MainActivity : AppCompatActivity() {
         binding.allItem.setOnClickListener {
             startActivity(Intent(this,AllItem::class.java))
         }
+        binding.outForDeliveryCard.setOnClickListener {
+            startActivity(Intent(this,ActivityOutForDelivery::class.java))
+        }
     }
 }
