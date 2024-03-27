@@ -1,4 +1,4 @@
-package com.app.adminpanelfeastfinder
+    package com.app.adminpanelfeastfinder
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
